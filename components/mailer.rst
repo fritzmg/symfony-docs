@@ -177,7 +177,7 @@ the application or when using a self-signed certificate::
 
     The ``verify_peer`` option was introduced in Symfony 5.1.
 
-Other options
+Other Options
 -------------
 
 .. versionadded:: 5.2
