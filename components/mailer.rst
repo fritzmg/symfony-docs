@@ -187,14 +187,14 @@ Other Options
 command
 ~~~~~~~
 
-Command to be executed by ``sendmail`` transport.
+Command to be executed by ``sendmail`` transport::
 
     $dsn = 'sendmail://default?command=/usr/sbin/sendmail%20-oi%20-t'
 
 local_domain
 ~~~~~~~~~~~~
 
-The domain name to use in ``HELO`` command.
+The domain name to use in ``HELO`` command::
 
     $dsn = 'smtps://smtp.example.com?local_domain=example.org'
 
@@ -203,14 +203,14 @@ restart_threshold
 
 The maximum number of messages to send before re-starting the transport. Can be 
 used together with ``restart_threshold_sleep`` which is the number of seconds to 
-sleep between stopping and re-starting the transport.
+sleep between stopping and re-starting the transport::
 
     $dsn = 'smtps://smtp.example.com?restart_threshold=10&restart_threshold_sleep=1'
 
 ping_threshold
 ~~~~~~~~~~~~~~
 
-The minimum number of seconds between two messages required to ping the server.
+The minimum number of seconds between two messages required to ping the server::
 
     $dsn = 'smtps://smtp.example.com?ping_threshold=200'
 
